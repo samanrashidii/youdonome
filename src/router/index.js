@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 const QuizPage = (resolve) => {
-  require.ensure(['./views/QuizPage.vue'], () => {
-    resolve(require('./views/QuizPage.vue'))
+  require.ensure(['../views/QuizPage.vue'], () => {
+    resolve(require('../views/QuizPage.vue'))
   })
 }
 

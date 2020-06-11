@@ -22,7 +22,7 @@ body{
 	direction: ltr;
     font-family: $font-normal, $font-reset-default;
     font-size: 1rem;
-    color: $color-primary;
+	color: $color-black;
 }
 
 h1,h2,h3,h4,h5,h6,strong{font-weight: normal;}
@@ -133,8 +133,6 @@ select {
     padding: 0 15px;
     cursor: pointer;
     outline: none;
-	background: url('~@/assets/images/assets/arrow-bottom-dark.svg') no-repeat 95% center $background_color_1;
-	background-size: 10px;
     border:none;
 	-webkit-appearance: none;
 }
