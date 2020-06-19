@@ -1,12 +1,16 @@
 <template>
   <div class="home">
-    <h1>Project starting now ...</h1>
+    <Logo />
   </div>
 </template>
 
 <script>
+import Logo from '@/components/Logo.vue'
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Logo
+  }
 }
 </script>
