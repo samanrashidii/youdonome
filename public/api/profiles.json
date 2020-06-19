@@ -7,7 +7,13 @@
     },
     {
         "name": "MadVorteX",
-        "image": "madvortex.jpg",
+        "image": "madvortex.png",
+        "title": "streamer",
+        "fieldOfActivity": "twitch"
+    },
+    {
+        "name": "Samirasaly",
+        "image": "samirasaly.jpg",
         "title": "streamer",
         "fieldOfActivity": "twitch"
     }

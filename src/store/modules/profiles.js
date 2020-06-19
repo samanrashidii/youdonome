@@ -15,8 +15,8 @@ export default {
   },
   actions: {
     getProfiles: (context, payload) => SERVER.getProfiles().then((res) => {
-      console.log(res)
       context.commit('SET_PROFILEBOXES', res.data)
+      return res.data
     })
   }
 }
