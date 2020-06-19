@@ -1,6 +1,6 @@
 // import Vue from 'vue'
-// import axios from 'axios'
-// import api from './api'
+import axios from 'axios'
+import api from './api'
 
 // axios.interceptors.request.use(
 //   function (config) {
@@ -20,18 +20,20 @@
 //   }
 // )
 
-// Object.entries(api).map(([key, value]) => {
-//   const obj = { ...value }
-//   api[key] = function (payload, url) {
-//     obj.data = payload
-//     if (url) {
-//       obj.url = url
-//     }
-//     const promise = axios(obj)
-//     return promise
-//   }
-// })
+Object.entries(api).map(([key, value]) => {
+  const obj = { ...value }
+  api[key] = function () {
+    // if (payload) {
+    //   obj.data = payload
+    // }
+    // if (url) {
+    //   obj.url = url
+    // }
+    const promise = axios(obj)
+    return promise
+  }
+})
 
-// export default {
-//   ...api
-// }
+export default {
+  ...api
+}

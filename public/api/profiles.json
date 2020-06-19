@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Aria Keoxer",
+        "image": "ariakeoxer.jpg",
+        "title": "youtuber",
+        "fieldOfActivity": "youtube"
+    },
+    {
+        "name": "MadVorteX",
+        "image": "madvortex.jpg",
+        "title": "streamer",
+        "fieldOfActivity": "twitch"
+    }
+]
