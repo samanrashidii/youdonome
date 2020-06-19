@@ -1,6 +1,6 @@
 <template>
     <div class="title">
-        <h1>Welcome to Youdonome QuizApp</h1>
+        <h1>{{ $t('home.mainTitle') }}</h1>
     </div>
 </template>
 
