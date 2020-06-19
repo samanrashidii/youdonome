@@ -5,14 +5,20 @@
       :value="$t('home.mainTitle')"
       size="xlg"
     />
-    <template v-if="profileBoxes">
-      <ProfileBox
-        v-for="(profile, index) in profileBoxes"
-        :key="index"
-        :image="profile.image"
-        :name="profile.name"
-      />
-    </template>
+    <div class="frame">
+      <div
+        v-if="profileBoxes"
+        class="profile-box-wrapper"
+      >
+        <ProfileBox
+          v-for="(profile, index) in profileBoxes"
+          :key="index"
+          :image="profile.image"
+          :name="profile.name"
+          @click.native="profileClicked(profile)"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,7 +46,10 @@ export default {
   methods: {
     ...mapActions({
       asdMethod: 'profiles/getProfiles'
-    })
+    }),
+    profileClicked (profile) {
+      console.log(profile)
+    }
   }
 }
 </script>

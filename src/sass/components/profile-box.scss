@@ -1,3 +1,24 @@
-.profile-box{
-    
+.profile-box-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    .profile-box{
+        position: relative;
+        width: 31%;
+        height: 350px;
+        overflow: hidden;
+        box-shadow: 0 0 15px $color-grey;
+        border-radius: $border-radius-default;
+        h2{
+            position: absolute;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            color: $color-white;
+            text-align: center;
+            padding:13px 5px;
+            background-color: $color-primary-dark;
+            z-index: 10;
+        }
+    }
 }
