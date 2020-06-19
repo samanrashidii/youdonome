@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <Logo />
-    <Title />
+    <Title
+      :value="$t('home.mainTitle')"
+      size="xlg"
+    />
   </div>
 </template>
 
