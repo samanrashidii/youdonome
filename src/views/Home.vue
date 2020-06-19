@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Project will start in next week</h1>
+    <h1>Project starting now ...</h1>
   </div>
 </template>
 
