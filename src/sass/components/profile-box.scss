@@ -1,16 +1,24 @@
 .profile-box-wrapper{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top:100px;
 }
 
 .profile-box{
     position: relative;
     width: 31%;
-    height: 350px;
+    max-width: $profile-box-width;
+    height: $profile-box-height;
     overflow: hidden;
+    cursor: pointer;
+    margin:1.2rem 0;
     box-shadow: 0 0 15px $color-grey;
     border-radius: $border-radius-default;
+    transition: $transition-sm;
+    &:hover{
+        box-shadow: 0 0 15px $color-grey-900;
+    }
     h2{
         position: absolute;
         bottom: 0;

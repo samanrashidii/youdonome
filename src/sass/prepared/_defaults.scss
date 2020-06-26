@@ -98,12 +98,12 @@ ol{list-style: none;}
 
 input {
 	&:-webkit-autofill {
-		background-color: $color-primary;
+		background-color: $color-white;
 		&:focus {
-			background-color: $color-primary;
+			background-color: $color-white;
 		}
 		&:active {
-			background-color: $color-primary;
+			background-color: $color-white;
 		}
     }
     display: block;
@@ -112,16 +112,17 @@ input {
 	line-height: $input-height;
 	font-family: $font-normal;
 	font-size: $font-size-md;
-	color: $color-secondary;
+	color: $color-black;
 	-webkit-appearance: none;
 	transition: all .2s ease-in-out;
     padding: 0 15px;
     outline: none;
-    background-color: $color-primary;
-	border: none;
+    background-color: $color-white;
+	border: 1px solid $color-grey-900;
 	border-radius: $border-radius-lg;
 	&:focus {
-		background-color: $color-primary;
+		box-shadow: 0 0 10px $color-grey-900;
+		border-color: transparent;
 	}
 }
 
@@ -143,17 +144,18 @@ button{
 	position: relative;
     display: block;
     width:100%;
-	height: 52px;
 	font-family: inherit;
     font-size: $font-size-md;
 	text-align: center;
-	padding:5px 10px;
-    margin-top:30px;
+	color: $color-white;
+	padding:12px 10px;
+    margin-top:15px;
     outline: none;
 	cursor: pointer;
     user-select: none;
-    border:none;
-	border-radius: 2px;
+	background-color: $color-secondary;
+	border:none;
+	border-radius: $border-radius-lg;
 	transition:all .2s ease-in-out;
 	&:active{
 		opacity: .8;
@@ -165,6 +167,7 @@ button{
 
 #app{
 	position: relative;
+	min-height: 100vh;
 	padding:20px 20px $social-box-height 20px;
 }
 

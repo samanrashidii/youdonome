@@ -18,6 +18,7 @@ $color-success: #00ff00;
 $color-warning: #0000ff;
 $color-white: #ffffff;
 $color-grey: #aeaeae;
+$color-grey-900: #2e2e2e;
 $color-black: #000000;
 $border-radius-xs: 1px;
 $border-radius-sm: 2px;
@@ -30,7 +31,11 @@ $size-sm: 640px;
 $size-md: 760px;
 $size-lg: 1024px;
 $size-xlg: 1240px;
+// Transitions
+$transition-sm: 0.2s ease-in-out;
 // Elements Styles
-$input-height: 34px;
+$input-height: 40px;
 $social-box-height: 120px;
 $social-icon-width: 50px;
+$profile-box-width: 375px;
+$profile-box-height: 350px;

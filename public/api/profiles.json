@@ -22,5 +22,13 @@
         "image": "samirasaly.jpg",
         "title": "streamer",
         "fieldOfActivity": "twitch"
+    },
+    {
+        "id": 3,
+        "name": "Farshad Silent",
+        "slug": "farshad-silent",
+        "image": "farshadsilent.jpg",
+        "title": "streamer/youtuber",
+        "fieldOfActivity": "twitch/youtube"
     }
 ]
