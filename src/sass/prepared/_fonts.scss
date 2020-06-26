@@ -1,16 +1,15 @@
 @charset "utf-8";
-
+// Font LTR
 @font-face{
 	font-family:'Muli';
 	src: url('~@/assets/fonts/Muli.woff') format('woff');
 	font-weight: normal;
   	font-style: normal;
 }
-
+// Font RTL
 @font-face{
 	font-family:'Iran';
 	src: url('~@/assets/fonts/Iran.woff') format('woff');
 	font-weight: normal;
   	font-style: normal;
 }
-
