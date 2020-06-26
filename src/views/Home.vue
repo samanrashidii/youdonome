@@ -8,11 +8,11 @@
         class="mt-2"
       />
       <div
-        v-if="profileBoxes"
+        v-if="profiles.length > 0"
         class="profile-box-wrapper"
       >
         <ProfileBox
-          v-for="(profile, index) in profileBoxes"
+          v-for="(profile, index) in profiles"
           :key="index"
           :image="profile.image"
           :name="profile.name"
@@ -38,7 +38,7 @@
 import Logo from '@/components/Logo.vue'
 import Title from '@/components/Title.vue'
 import ProfileBox from '@/components/ProfileBox.vue'
-import { mapActions, mapGetters } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Home',
@@ -49,18 +49,17 @@ export default {
   },
   computed: {
     ...mapGetters({
-      profileBoxes: 'profiles/profileBoxes'
+      profiles: 'profiles/profiles'
     })
   },
-  created () {
-    this.asdMethod()
-  },
   methods: {
-    ...mapActions({
-      asdMethod: 'profiles/getProfiles'
-    }),
     profileClicked (profile) {
-      console.log(profile)
+      this.$router.push({
+        name: 'quizpage',
+        params: {
+          id: profile.slug
+        }
+      })
     }
   }
 }

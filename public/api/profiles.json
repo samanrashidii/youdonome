@@ -2,6 +2,7 @@
     {
         "id": 0,
         "name": "Aria Keoxer",
+        "slug": "aria-keoxer",
         "image": "ariakeoxer.jpg",
         "title": "youtuber",
         "fieldOfActivity": "youtube"
@@ -9,6 +10,7 @@
     {
         "id": 1,
         "name": "MadVorteX",
+        "slug": "madvortex",
         "image": "madvortex.jpg",
         "title": "streamer",
         "fieldOfActivity": "twitch"
@@ -16,6 +18,7 @@
     {
         "id": 2,
         "name": "Samirasaly",
+        "slug": "samirasaly",
         "image": "samirasaly.jpg",
         "title": "streamer",
         "fieldOfActivity": "twitch"

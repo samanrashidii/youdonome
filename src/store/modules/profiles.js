@@ -3,19 +3,19 @@ import SERVER from '@/service/server'
 export default {
   namespaced: true,
   state: {
-    profileBoxes: null
+    profiles: []
   },
   getters: {
-    profileBoxes: state => state.profileBoxes
+    profiles: state => state.profiles
   },
   mutations: {
-    SET_PROFILEBOXES: (state, val) => {
-      state.profileBoxes = val
+    SET_PROFILES: (state, val) => {
+      state.profiles = val
     }
   },
   actions: {
-    getProfiles: (context, payload) => SERVER.getProfiles().then((res) => {
-      context.commit('SET_PROFILEBOXES', res.data)
+    getProfiles: (context) => SERVER.getProfiles().then((res) => {
+      context.commit('SET_PROFILES', res.data)
       return res.data
     })
   }
