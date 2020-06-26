@@ -164,7 +164,8 @@ button{
 // Defined Classes or Ids
 
 #app{
-	padding:20px;
+	position: relative;
+	padding:20px 20px $social-box-height 20px;
 }
 
 .frame{

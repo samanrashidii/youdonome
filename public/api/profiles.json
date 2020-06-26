@@ -1,17 +1,20 @@
 [
     {
+        "id": 0,
         "name": "Aria Keoxer",
         "image": "ariakeoxer.jpg",
         "title": "youtuber",
         "fieldOfActivity": "youtube"
     },
     {
+        "id": 1,
         "name": "MadVorteX",
         "image": "madvortex.jpg",
         "title": "streamer",
         "fieldOfActivity": "twitch"
     },
     {
+        "id": 2,
         "name": "Samirasaly",
         "image": "samirasaly.jpg",
         "title": "streamer",

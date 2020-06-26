@@ -1,0 +1,18 @@
+.socials{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $social-box-height;
+        li{
+            margin:0 10px;
+            img{
+                width:$social-icon-width;
+            }
+        }
+    }
+}
