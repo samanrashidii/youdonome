@@ -1,5 +1,5 @@
 <template>
-  <div class="socials">
+  <div class="socials pb-1">
     <ul>
         <li
             v-for="social in socials"

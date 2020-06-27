@@ -5,7 +5,7 @@
       :name="profile.name"
     />
     <form
-      class="mt-3"
+      class="mt-2"
       @submit.prevent="usernameInserted()"
     >
       <input
