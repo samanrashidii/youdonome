@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-alpha.3]
+### Added
+- Store modules for youtubers and streamers
+- How to Play text
+- Social components in footer
+- Start Quiz part 1
+
 ## [1.0.0-alpha.2]
 ### Added
 - Pages and homepage layout
