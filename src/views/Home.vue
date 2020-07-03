@@ -31,6 +31,7 @@
         />
       </div>
     </div>
+    <Socials />
   </div>
 </template>
 
@@ -38,6 +39,7 @@
 import Logo from '@/components/Logo.vue'
 import Title from '@/components/Title.vue'
 import ProfileBox from '@/components/ProfileBox.vue'
+import Socials from '@/components/Socials.vue'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -45,7 +47,8 @@ export default {
   components: {
     Logo,
     Title,
-    ProfileBox
+    ProfileBox,
+    Socials
   },
   computed: {
     ...mapGetters({

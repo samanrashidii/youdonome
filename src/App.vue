@@ -1,17 +1,12 @@
 <template>
   <div id="app">
     <router-view/>
-    <Socials />
   </div>
 </template>
 
 <script>
-import Socials from '@/components/Socials.vue'
 import { mapActions } from 'vuex'
 export default {
-  components: {
-    Socials
-  },
   created () {
     this.getProfiles()
   },

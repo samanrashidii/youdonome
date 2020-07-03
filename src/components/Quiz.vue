@@ -1,6 +1,9 @@
 <template>
   <div class="main-quiz step-2">
-    <ProgressBar />
+    <ProgressBar
+      :current="2"
+      :total="20"
+    />
   </div>
 </template>
 
