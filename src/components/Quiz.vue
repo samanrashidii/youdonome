@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import ProgressBar from '@/components/ProgressBar'
 import QuestionBox from '@/components/QuestionBox'
 
@@ -53,6 +53,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      quizData: 'quiz/quizData'
+    }),
     questions () {
       return this.$t('questions')
     },
@@ -62,18 +65,21 @@ export default {
   },
   methods: {
     ...mapActions({
-      setQuestionStep: 'quiz/setQuestionStep'
+      setQuestionStep: 'quiz/setQuestionStep',
+      updateCorrectAnswer: 'quiz/updateCorrectAnswer'
     }),
     confirmAnswer () {
-      console.log('User Answer : ' + this.answeredQustion)
-      let correctAnswer
-      this.profile.answers.forEach((answer) => {
-        if (answer.id === this.currentQuestion.id) {
-          correctAnswer = answer.correct
-        }
-      })
-      console.log('Streamer Answer : ' + correctAnswer)
-      this.setQuestionStep()
+      if (this.answeredQustion !== null) {
+        this.profile.answers.forEach((answer) => {
+          if (answer.id === this.currentQuestion.id) {
+            if (this.answeredQustion === answer.correct) {
+              this.updateCorrectAnswer()
+            }
+          }
+        })
+        this.setQuestionStep()
+        console.log('Correct Answers : ', this.quizData.correctAnswers)
+      }
     },
     setAnsweredOption (index) {
       this.answeredQustion = index

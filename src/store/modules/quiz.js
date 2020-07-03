@@ -5,7 +5,8 @@ export default {
     profile: {},
     username: null,
     questionStep: 1,
-    totalQuestion: 4
+    totalQuestion: 4,
+    correctAnswers: 0
   },
   getters: {
     quizData: state => state
@@ -26,6 +27,9 @@ export default {
       } else {
         state.questionStep++
       }
+    },
+    UPDATE_CORRECT_ANSWER: (state) => {
+      state.correctAnswers++
     }
   },
   actions: {
@@ -40,6 +44,9 @@ export default {
     },
     setQuestionStep: (context) => {
       context.commit('SET_QUESTION_STEP')
+    },
+    updateCorrectAnswer: (context) => {
+      context.commit('UPDATE_CORRECT_ANSWER')
     }
   }
 }
