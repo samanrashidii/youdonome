@@ -6,6 +6,9 @@
       :profile="quizData.profile"
     />
     <!-- Step 2 -->
+    <Quiz
+      v-if="quizData.step === 2"
+    />
     <!-- Step 3 -->
   </div>
 </template>
@@ -13,10 +16,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import StartQuiz from '@/components/StartQuiz.vue'
+import Quiz from '@/components/Quiz.vue'
 export default {
   name: 'QuizPage',
   components: {
-    StartQuiz
+    StartQuiz,
+    Quiz
   },
   computed: {
     ...mapGetters({

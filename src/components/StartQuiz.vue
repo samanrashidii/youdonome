@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import ProfileBox from '@/components/ProfileBox.vue'
 export default {
   name: 'startQuiz',
@@ -40,8 +41,15 @@ export default {
     }
   },
   methods: {
+    ...mapActions({
+      setUserName: 'quiz/setUserName',
+      setStep: 'quiz/setStep'
+    }),
     usernameInserted () {
-      alert(this.username)
+      this.setUserName(this.username)
+        .then(() => {
+          this.setStep(2)
+        })
     }
   }
 }
