@@ -13,7 +13,25 @@
         "slug": "madvortex",
         "image": "madvortex.jpg",
         "title": "streamer",
-        "fieldOfActivity": "twitch"
+        "fieldOfActivity": "twitch",
+        "answers": [
+            {
+                "id": 0,
+                "answer": 0
+            },
+            {
+                "id": 1,
+                "answer": 0
+            },
+            {
+                "id": 3,
+                "answer": 0
+            },
+            {
+                "id": 3,
+                "answer": 1
+            }
+        ]
     },
     {
         "id": 2,

@@ -204,3 +204,15 @@ button{
 .text-start{text-align: start;}
 .text-end{text-align: end;}
 .text-justify{text-align: justify;}
+
+.btn{
+	min-width: 120px;
+	color: $color-white;
+	padding:10px 12px;
+	margin: 10px 0;
+	background-color: $color-primary-dark;
+	border-radius: $border-radius-lg;
+	&:hover{
+		background-color: $color-secondary-dark;
+	}
+}

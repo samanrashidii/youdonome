@@ -2,7 +2,9 @@ export default {
   namespaced: true,
   state: {
     step: 2,
-    profile: {}
+    profile: {},
+    username: null,
+    questionStep: 0
   },
   getters: {
     quizData: state => state
@@ -16,6 +18,9 @@ export default {
     },
     SET_STEP: (state, payload) => {
       state.step = payload
+    },
+    SET_QUESTION_STEP: (state, payload) => {
+      state.questionStep = payload
     }
   },
   actions: {
@@ -27,6 +32,9 @@ export default {
     },
     setStep: (context, payload) => {
       context.commit('SET_STEP', payload)
+    },
+    setQuestionStep: (context, payload) => {
+      context.commit('SET_QUESTION_STEP', payload)
     }
   }
 }

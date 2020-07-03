@@ -11,6 +11,77 @@
   },
   "quiz": {
     "usernamePlaceholder": "Enter your name please",
-    "startQuizButton": "Start Quiz!"
-  }
+    "startQuizButton": "Start Quiz!",
+    "confirmAnswer": "Confirm Answer"
+  },
+  "questions": [
+    {
+      "id": 0,
+      "category": "comic",
+      "title": "Which one do you love the most?",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Batman",
+          "image": "batman.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Aquaman",
+          "image": "aquaman.jpg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "category": "food",
+      "title": "Which one you prefer to eat for the rest of your life?",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Pizza",
+          "image": "pizza.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Dizi",
+          "image": "dizi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "movie",
+      "title": "Which one do you love the most?",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Interstellar",
+          "image": "interstellar.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Godfather",
+          "image": "godfather.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "music",
+      "title": "Which one do you love the most?",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Metallica",
+          "image": "metallica.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Pink Floyd",
+          "image": "pinkfloyd.jpg"
+        }
+      ]
+    }
+  ]
 }

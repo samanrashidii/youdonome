@@ -1,0 +1,32 @@
+.question-box{
+    text-align: center;
+    margin: 40px 0;
+    .answer-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px;
+        li{
+            overflow: hidden;
+            margin: 20px;
+            cursor: pointer;
+            img{
+                border: 5px solid transparent;
+                border-radius: $border-radius-default;
+            }
+            strong{
+                display: block;
+                font-size: 1.5em;
+                margin-top:10px;
+            }
+            &.selected{
+                img{
+                    border-color: $color-primary;
+                }
+                strong{
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
