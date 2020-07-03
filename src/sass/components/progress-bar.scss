@@ -12,7 +12,8 @@
     span{
         display: block;
         height: 100%;
-        background: $color-gradient-mix; 
+        background: $color-gradient-mix;
+        transition: all .3s ease-in-out;
     }
     strong{
         position: absolute;
