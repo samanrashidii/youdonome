@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    step: 1,
+    step: 2,
     profile: {}
   },
   getters: {

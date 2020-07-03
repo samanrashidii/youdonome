@@ -8,6 +8,8 @@
     <!-- Step 2 -->
     <Quiz
       v-if="quizData.step === 2"
+      :profile="quizData.profile"
+      :username="quizData.username"
     />
     <!-- Step 3 -->
   </div>
