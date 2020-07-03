@@ -4,7 +4,8 @@ export default {
     step: 2,
     profile: {},
     username: null,
-    questionStep: 0
+    questionStep: 1,
+    totalQuestion: 4
   },
   getters: {
     quizData: state => state
@@ -19,8 +20,12 @@ export default {
     SET_STEP: (state, payload) => {
       state.step = payload
     },
-    SET_QUESTION_STEP: (state, payload) => {
-      state.questionStep = payload
+    SET_QUESTION_STEP: (state) => {
+      if ((state.questionStep) === state.totalQuestion) {
+        alert('Quiz Finished')
+      } else {
+        state.questionStep++
+      }
     }
   },
   actions: {
@@ -33,8 +38,8 @@ export default {
     setStep: (context, payload) => {
       context.commit('SET_STEP', payload)
     },
-    setQuestionStep: (context, payload) => {
-      context.commit('SET_QUESTION_STEP', payload)
+    setQuestionStep: (context) => {
+      context.commit('SET_QUESTION_STEP')
     }
   }
 }

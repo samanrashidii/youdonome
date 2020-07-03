@@ -17,19 +17,19 @@
         "answers": [
             {
                 "id": 0,
-                "answer": 0
+                "correct": 0
             },
             {
                 "id": 1,
-                "answer": 0
+                "correct": 0
+            },
+            {
+                "id": 2,
+                "correct": 0
             },
             {
                 "id": 3,
-                "answer": 0
-            },
-            {
-                "id": 3,
-                "answer": 1
+                "correct": 1
             }
         ]
     },

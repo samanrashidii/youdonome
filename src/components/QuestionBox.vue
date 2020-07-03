@@ -37,7 +37,7 @@ export default {
         }
       })
       this.$forceUpdate()
-      this.$emit('optionSelected')
+      this.$emit('optionSelected', ind)
     }
   }
 }

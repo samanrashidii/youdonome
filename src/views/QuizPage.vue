@@ -11,6 +11,7 @@
       :profile="quizData.profile"
       :username="quizData.username"
       :questionStep="quizData.questionStep"
+      :totalQuestion="quizData.totalQuestion"
     />
     <!-- Step 3 -->
   </div>
