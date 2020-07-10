@@ -1,6 +1,7 @@
 <template>
   <div class="start-quiz step-1">
     <ProfileBox
+      :displayOnly="true"
       :image="profile.image"
       :name="profile.name"
     />

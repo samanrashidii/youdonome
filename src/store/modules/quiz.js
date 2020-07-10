@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    step: 1,
+    step: 3,
     profile: {},
     username: null,
     questionStep: 1,

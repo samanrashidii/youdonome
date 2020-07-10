@@ -1,9 +1,10 @@
 {
   "common": {
-    "logo": "Youdonome Logo"
+    "logo": "Youdonome Logo",
+    "brandName": "<strong class='brand-text'>You<span>donome</span></strong>"
   },
   "home": {
-    "mainTitle": "Welcome to <strong>You<span>donome</span></strong> QuizApp"
+    "mainTitle": "Welcome to {brandName} QuizApp"
   },
   "howToPlay": {
     "title": "How to Play",

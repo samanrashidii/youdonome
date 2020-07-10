@@ -3,7 +3,9 @@
     <div class="frame">
       <Logo />
       <Title
-        :value="$t('home.mainTitle')"
+        :value="$t('home.mainTitle', {
+          brandName: $t('common.brandName')
+        })"
         size="xlg"
         class="mt-2"
       />

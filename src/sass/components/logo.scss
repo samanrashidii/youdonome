@@ -1,12 +1,16 @@
 .logo{
     padding: 20px;
     text-align: center;
+    &.with-text{
+        display:flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            width:70px;
+            margin:0 15px 0 0;
+        }
+    }
     img{
         width: 100px;
     }
-}
-
-.logo{
-    padding: 20px;
-    text-align: center;
 }

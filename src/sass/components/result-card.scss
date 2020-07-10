@@ -1,0 +1,14 @@
+.result-card{
+    position: relative;
+    padding:100px 20px 20px 20px;
+    border:5px solid $color-primary-dark;
+    border-radius: $border-radius-default;
+    .logo{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        padding:10px;
+        z-index: 10;
+    }
+}

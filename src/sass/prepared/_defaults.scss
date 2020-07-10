@@ -216,3 +216,11 @@ button{
 		background-color: $color-secondary-dark;
 	}
 }
+
+.brand-text{
+	font-weight: bold;
+	color: $color-secondary;
+	span{
+		color: $color-primary;
+	}
+}

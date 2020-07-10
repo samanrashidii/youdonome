@@ -14,6 +14,9 @@
       :totalQuestion="quizData.totalQuestion"
     />
     <!-- Step 3 -->
+    <EndQuiz
+      v-if="quizData.step === 3"
+    />
   </div>
 </template>
 
@@ -21,11 +24,14 @@
 import { mapGetters, mapActions } from 'vuex'
 import StartQuiz from '@/components/StartQuiz.vue'
 import Quiz from '@/components/Quiz.vue'
+import EndQuiz from '@/components/EndQuiz.vue'
+
 export default {
   name: 'QuizPage',
   components: {
     StartQuiz,
-    Quiz
+    Quiz,
+    EndQuiz
   },
   computed: {
     ...mapGetters({

@@ -1,5 +1,8 @@
 <template>
-    <div class="profile-box">
+    <div
+      class="profile-box"
+      :class="{'display-only': displayOnly}"
+    >
         <img
             v-if="image"
             :src="require(`@/assets/profiles/${image}`)"
@@ -20,6 +23,10 @@ export default {
     name: {
       type: String,
       default: ''
+    },
+    displayOnly: {
+      type: Boolean,
+      default: false
     }
   }
 }
