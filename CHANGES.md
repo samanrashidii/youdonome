@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Unreleased]
+
+## [1.0.0-alpha.4]
+### Added
+- Start Quiz part 2
+- Questions Part
+- Progress Bar
+- Get the result from Quiz
+
 ## [1.0.0-alpha.3]
 ### Added
 - Store modules for youtubers and streamers
