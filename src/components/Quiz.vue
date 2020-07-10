@@ -69,12 +69,16 @@ export default {
       updateCorrectAnswer: 'quiz/updateCorrectAnswer'
     }),
     confirmAnswer () {
+      // Check if user select an answer
       if (this.answeredQustion !== null) {
         this.profile.answers.forEach((answer) => {
+          // Check and match question id with streamer/youtuber
           if (answer.id === this.currentQuestion.id) {
+            // Check if answer is right
             if (this.answeredQustion === answer.correct) {
               this.updateCorrectAnswer()
             }
+            this.answeredQustion = null
           }
         })
         this.setQuestionStep()
