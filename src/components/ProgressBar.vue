@@ -1,9 +1,21 @@
 <template>
-    <div class="progress-bar">
+    <div
+      class="progress-bar"
+      :class="{'display-only': displayOnly}"
+    >
         <span
             :style="{width: percentage}"
         />
-        <strong>{{ current + ' / ' + total }}</strong>
+        <strong
+          v-if="!displayOnly"
+        >
+          {{ current + ' / ' + total }}
+        </strong>
+        <strong
+          v-else
+        >
+          {{ percentage }}
+        </strong>
     </div>
 </template>
 
@@ -18,6 +30,10 @@ export default {
     total: {
       type: Number,
       default: 0
+    },
+    displayOnly: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {

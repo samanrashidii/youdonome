@@ -9,6 +9,14 @@
     margin: auto;
     background-color: $color-grey-200;
     border-radius: $border-radius-round;
+    &.display-only{
+        max-width: $progress-bar-width;
+        height: 25px;
+        margin:auto;
+        strong{
+            font-size: .7rem;
+        }
+    }
     span{
         display: block;
         height: 100%;

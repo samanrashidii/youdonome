@@ -1,23 +1,27 @@
 <template>
   <div class="end-quiz step-3">
     <ResultCard
-      :profile="profile"
+      :profile="quizData.profile"
+      :correctAnswers="quizData.correctAnswers"
+      :totalQuestions="quizData.totalQuestion"
+      :username="quizData.username"
     />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import ResultCard from '@/components/ResultCard.vue'
+
 export default {
   name: 'endQuiz',
   components: {
     ResultCard
   },
-  props: {
-    profile: {
-      type: Object,
-      defualt: () => {}
-    }
+  computed: {
+    ...mapGetters({
+      quizData: 'quiz/quizData'
+    })
   }
 }
 </script>

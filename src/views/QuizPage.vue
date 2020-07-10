@@ -16,7 +16,6 @@
     <!-- Step 3 -->
     <EndQuiz
       v-if="quizData.step === 3"
-      :profile="quizData.profile"
     />
   </div>
 </template>

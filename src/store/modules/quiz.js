@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    step: 3,
+    step: 1,
     profile: {},
     username: null,
     questionStep: 1,
@@ -22,8 +22,8 @@ export default {
       state.step = payload
     },
     SET_QUESTION_STEP: (state) => {
-      if ((state.questionStep) === state.totalQuestion) {
-        alert('Quiz Finished')
+      if (state.questionStep === state.totalQuestion) {
+        state.step++
       } else {
         state.questionStep++
       }

@@ -14,7 +14,10 @@
     "usernamePlaceholder": "Enter your name please",
     "startQuizButton": "Start Quiz!",
     "confirmAnswer": "Confirm Answer",
-    "resultText": "You have answered <span>{answeredQuestions}</span> from <span>{totalQuestions}</span> questions correctly!"
+    "resultText": "You have answered <span>{answeredQuestions}</span> from <span>{totalQuestions}</span> questions correctly!",
+    "happyText": "Well done <strong>{username}</strong> ...!!!",
+    "angryText": "Nice try <strong>{username}</strong>... It was okay!",
+    "sadText": "You don't know me <strong>{username}</strong> ...!!!"
   },
   "questions": [
     {
