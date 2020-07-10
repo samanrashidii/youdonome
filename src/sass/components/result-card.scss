@@ -1,7 +1,10 @@
 .result-card{
     position: relative;
+    max-width: $result-card-width;
+    height: $result-card-height;
     padding:100px 20px 20px 20px;
-    border:5px solid $color-primary-dark;
+    margin: auto;
+    border:4px solid $color-primary-dark;
     border-radius: $border-radius-default;
     .logo{
         position: absolute;
@@ -10,5 +13,37 @@
         width: 100%;
         padding:10px;
         z-index: 10;
+    }
+    .result-status{
+        width: $result-status-width;
+    }
+    .result-text{
+        span{
+            font-size: 1.5rem;
+            color: $color-primary-dark;
+            &:last-of-type{
+                color: $color-secondary-dark;
+            }
+        }
+    }
+    .card-footer{
+        position: absolute;
+        bottom:0;
+        left:0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        padding:15px;
+        background-color: $color-primary;
+        border-top:4px solid $color-primary-dark;
+        img{
+            width: $profile-card-image;
+            padding:2px;
+            margin: 0 10px 0 0;
+            background-color: $color-white;
+            border: 2px solid $color-secondary-dark;
+            border-radius: 50%;
+        }
     }
 }

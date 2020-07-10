@@ -4,17 +4,24 @@
         :isTextVisible="true"
       />
       <img
-        src="@/assets/logo.svg"
+        class="result-status"
+        src="@/assets/conditions/happy.svg"
         alt=""
       >
       <h4 />
-      <p />
+      <p
+        class="result-text text-center"
+        v-html="$t('quiz.resultText', {
+          answeredQuestions: 3,
+          totalQuestions: 20
+        })"
+      />
       <div class="card-footer">
           <img
-            src="@/assets/logo.svg"
-            alt=""
+            :src="require(`@/assets/profiles/${profile.image}`)"
+            :alt="profile.name"
           >
-          <strong></strong>
+          <strong>{{ profile.name }}</strong>
       </div>
   </div>
 </template>
@@ -25,6 +32,12 @@ export default {
   name: 'resultCard',
   components: {
     Logo
+  },
+  props: {
+    profile: {
+      type: Object,
+      defualt: () => {}
+    }
   }
 }
 </script>

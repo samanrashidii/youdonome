@@ -13,7 +13,8 @@
   "quiz": {
     "usernamePlaceholder": "Enter your name please",
     "startQuizButton": "Start Quiz!",
-    "confirmAnswer": "Confirm Answer"
+    "confirmAnswer": "Confirm Answer",
+    "resultText": "You have answered <span>{answeredQuestions}</span> from <span>{totalQuestions}</span> questions correctly!"
   },
   "questions": [
     {
