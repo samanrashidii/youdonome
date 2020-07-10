@@ -167,8 +167,9 @@ button{
 
 #app{
 	position: relative;
+	min-width: $body-min-width;
 	min-height: 100vh;
-	padding:20px 20px $social-box-height 20px;
+	padding:20px 0 $social-box-height 0;
 }
 
 .frame{
@@ -222,5 +223,11 @@ button{
 	color: $color-secondary;
 	span{
 		color: $color-primary;
+	}
+}
+
+.description{
+	@media (max-width: $tablet-screen) {
+		margin-top:0 !important;
 	}
 }

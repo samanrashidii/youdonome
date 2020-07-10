@@ -39,7 +39,25 @@
         "slug": "samirasaly",
         "image": "samirasaly.jpg",
         "title": "streamer",
-        "fieldOfActivity": "twitch"
+        "fieldOfActivity": "twitch",
+        "answers": [
+            {
+                "id": 0,
+                "correct": 1
+            },
+            {
+                "id": 1,
+                "correct": 1
+            },
+            {
+                "id": 2,
+                "correct": 1
+            },
+            {
+                "id": 3,
+                "correct": 1
+            }
+        ]
     },
     {
         "id": 3,

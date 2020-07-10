@@ -24,12 +24,12 @@
       <Title
         :value="$t('howToPlay.title')"
         size="lg"
-        class="mt-3 pt-3"
+        class="mt-2 pt-2"
       />
       <div class="frame frame-sm">
         <p
           v-html="$t('howToPlay.description')"
-          class="mt-2 text-center"
+          class="description mt-2 text-center"
         />
       </div>
     </div>

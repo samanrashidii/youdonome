@@ -3,6 +3,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top:100px;
+    @media (max-width: $tablet-screen) {
+        margin-top:40px;
+    }
 }
 
 .profile-box{
@@ -32,5 +35,15 @@
         padding:13px 5px;
         background-color: $color-primary-dark;
         z-index: 10;
+    }
+    @media (max-width: $laptop-screen) {
+        width: 46.5%;
+    }
+    @media (max-width: $tablet-screen) {
+        width: 100%;
+        margin:1.2rem auto;
+    }
+    @media (max-width: $mobile-screen-xs) {
+        height: $profile-box-height-xs;
     }
 }

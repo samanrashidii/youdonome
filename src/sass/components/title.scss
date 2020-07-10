@@ -1,3 +1,7 @@
 .title{
     text-align: center;
+    @media (max-width: $tablet-screen) {
+        padding-top:1rem !important;
+        margin-top:1rem !important;
+    }
 }
