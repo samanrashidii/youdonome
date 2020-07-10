@@ -35,8 +35,8 @@ export default {
       default: () => {}
     },
     username: {
-      type: Object,
-      default: () => {}
+      type: String,
+      default: ''
     },
     questionStep: {
       type: Number,
@@ -81,6 +81,7 @@ export default {
             this.answeredQustion = null
           }
         })
+        // Go Next Question
         this.setQuestionStep()
         console.log('Correct Answers : ', this.quizData.correctAnswers)
       }

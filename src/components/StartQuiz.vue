@@ -46,10 +46,12 @@ export default {
       setStep: 'quiz/setStep'
     }),
     usernameInserted () {
-      this.setUserName(this.username)
-        .then(() => {
-          this.setStep(2)
-        })
+      if (this.username) {
+        this.setUserName(this.username)
+          .then(() => {
+            this.setStep(2)
+          })
+      }
     }
   }
 }
