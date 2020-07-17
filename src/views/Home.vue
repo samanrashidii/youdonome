@@ -13,6 +13,20 @@
         v-html="$t('howToPlay.description')"
         class="description mt-2 text-center"
       />
+      <form
+        class="search-form mt-2"
+        @submit.prevent
+      >
+        <input
+          v-model="search"
+          type="text"
+          name="search"
+          :placeholder="$t('home.searchProfiles')"
+        />
+        <button type="submit">
+          {{ $t('common.searchButton') }}
+        </button>
+      </form>
       <div
         v-if="profiles.length > 0"
         class="profile-box-wrapper"
@@ -26,6 +40,11 @@
           @click.native="profileClicked(profile)"
         />
       </div>
+      <h4
+        v-else
+        v-html="$t('home.noResult')"
+        class="mt-2 mb-2 text-center"
+      />
       <Socials />
     </div>
   </div>
@@ -46,10 +65,30 @@ export default {
     ProfileBox,
     Socials
   },
+  data () {
+    return {
+      search: null
+    }
+  },
   computed: {
     ...mapGetters({
-      profiles: 'profiles/profiles'
-    })
+      allProfiles: 'profiles/profiles'
+    }),
+    profiles () {
+      let profiles
+      if (this.search) {
+        profiles = this.allProfiles.filter(profile => {
+          const searchedName = this.search.toLowerCase()
+          const profileName = profile.name.toLowerCase()
+          if (profileName.indexOf(searchedName) !== -1) {
+            return profile
+          }
+        })
+      } else {
+        profiles = this.allProfiles
+      }
+      return profiles
+    }
   },
   methods: {
     profileClicked (profile) {

@@ -1,10 +1,13 @@
 {
   "common": {
     "logo": "Youdonome Logo",
-    "brandName": "<strong class='brand-text'>You<span>donome</span></strong>"
+    "brandName": "<strong class='brand-text'>You<span>donome</span></strong>",
+    "searchButton": "🔍"
   },
   "home": {
-    "mainTitle": "Welcome to {brandName} QuizApp"
+    "mainTitle": "Welcome to {brandName} QuizApp",
+    "searchProfiles": "Search...",
+    "noResult": "There are no results available!"
   },
   "howToPlay": {
     "title": "How to Play",
