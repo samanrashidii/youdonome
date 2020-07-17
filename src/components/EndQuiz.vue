@@ -1,11 +1,13 @@
 <template>
   <div class="end-quiz step-3">
-    <ResultCard
-      :profile="quizData.profile"
-      :correctAnswers="quizData.correctAnswers"
-      :totalQuestions="quizData.totalQuestion"
-      :username="quizData.username"
-    />
+    <div class="frame">
+      <ResultCard
+        :profile="quizData.profile"
+        :correctAnswers="quizData.correctAnswers"
+        :totalQuestions="quizData.totalQuestion"
+        :username="quizData.username"
+      />
+    </div>
   </div>
 </template>
 

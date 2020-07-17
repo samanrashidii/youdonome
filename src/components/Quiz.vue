@@ -83,7 +83,6 @@ export default {
         })
         // Go Next Question
         this.setQuestionStep()
-        console.log('Correct Answers : ', this.quizData.correctAnswers)
       }
     },
     setAnsweredOption (index) {

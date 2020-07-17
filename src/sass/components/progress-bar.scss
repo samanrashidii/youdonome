@@ -6,13 +6,13 @@
     line-height: 38px;
     overflow: hidden;
     text-align: center;
-    margin: auto;
+    margin:0 auto;
     background-color: $color-grey-200;
     border-radius: $border-radius-round;
     &.display-only{
         max-width: $progress-bar-width;
         height: 25px;
-        margin:auto;
+        margin:0 auto;
         strong{
             font-size: .7rem;
         }
@@ -29,5 +29,8 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+    }
+    @media (max-width: $mobile-screen) {
+        height: 35px;
     }
 }

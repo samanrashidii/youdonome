@@ -1,10 +1,16 @@
 <template>
   <div class="start-quiz step-1">
     <div class="frame">
+      <Title
+        :value="$t('quiz.title')"
+        size="lg"
+        class="mb-2"
+      />
       <ProfileBox
         :displayOnly="true"
         :image="profile.image"
         :name="profile.name"
+        :activity="profile.fieldOfActivity"
       />
       <p
         v-html="$t('quiz.description')"
@@ -30,11 +36,13 @@
 
 <script>
 import { mapActions } from 'vuex'
+import Title from '@/components/Title.vue'
 import ProfileBox from '@/components/ProfileBox.vue'
 export default {
   name: 'startQuiz',
   components: {
-    ProfileBox
+    ProfileBox,
+    Title
   },
   props: {
     profile: {

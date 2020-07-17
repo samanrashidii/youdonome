@@ -26,8 +26,8 @@
           @click.native="profileClicked(profile)"
         />
       </div>
+      <Socials />
     </div>
-    <Socials />
   </div>
 </template>
 

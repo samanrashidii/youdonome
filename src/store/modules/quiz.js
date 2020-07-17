@@ -26,8 +26,10 @@ export default {
     },
     SET_QUESTION_STEP: (state) => {
       if (state.questionStep === state.totalQuestion) {
+        // Questions are all answered go next step
         state.step++
       } else {
+        // GO next question
         state.questionStep++
       }
     },

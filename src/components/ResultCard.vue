@@ -15,7 +15,7 @@
         })"
        />
       <p
-        class="result-text text-center"
+        class="result-text text-center no-justify"
         v-html="$t('quiz.resultText', {
           answeredQuestions: correctAnswers,
           totalQuestions: totalQuestions
