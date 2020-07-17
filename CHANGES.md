@@ -6,7 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [Unreleased]
+## [1.0.0-alpha.5]
+### Added
+- Validation on choose answers
+- Questions Part
+- Progress Bar
+- Result Card for sharing
+- Responsive for homepage
+
+### Fixed
+- Remaining issues and bugs related to quiz steps
+
+### Changed
+- Logo Component
 
 ## [1.0.0-alpha.4]
 ### Added
