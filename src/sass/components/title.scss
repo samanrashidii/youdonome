@@ -1,8 +1,8 @@
 .title{
     text-align: center;
     @media (max-width: $tablet-screen) {
-        padding-top:1rem !important;
-        margin-top:1rem !important;
+        padding:1rem 0 !important;
+        margin:1rem 0 !important;
     }
     @media (max-width: $mobile-screen) {
         padding:.8rem 0 !important;

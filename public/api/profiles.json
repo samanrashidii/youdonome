@@ -5,7 +5,7 @@
         "slug": "aria-keoxer",
         "image": "ariakeoxer.jpg",
         "title": "youtuber",
-        "fieldOfActivity": "youtube"
+        "fieldOfActivity": ["twitch", "youtube"]
     },
     {
         "id": 1,
@@ -13,7 +13,7 @@
         "slug": "madvortex",
         "image": "madvortex.jpg",
         "title": "streamer",
-        "fieldOfActivity": "twitch",
+        "fieldOfActivity": ["twitch"],
         "answers": [
             {
                 "id": 0,
@@ -39,7 +39,7 @@
         "slug": "samirasaly",
         "image": "samirasaly.jpg",
         "title": "streamer",
-        "fieldOfActivity": "twitch",
+        "fieldOfActivity": ["twitch"],
         "answers": [
             {
                 "id": 0,
@@ -65,6 +65,6 @@
         "slug": "farshad-silent",
         "image": "farshadsilent.jpg",
         "title": "streamer/youtuber",
-        "fieldOfActivity": "twitch/youtube"
+        "fieldOfActivity": ["twitch", "youtube"]
     }
 ]

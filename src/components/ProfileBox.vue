@@ -3,6 +3,17 @@
       class="profile-box"
       :class="{'display-only': displayOnly}"
     >
+        <div
+          v-if="activity.length > 0"
+          class="activies"
+        >
+          <img
+              v-for="(field, index) in activity"
+              :key="index"
+              :src="require(`@/assets/fields/${field}.svg`)"
+              :alt="name"
+          />
+        </div>
         <img
             v-if="image"
             :src="require(`@/assets/profiles/${image}`)"
@@ -23,6 +34,10 @@ export default {
     name: {
       type: String,
       default: ''
+    },
+    activity: {
+      type: Array,
+      default: () => []
     },
     displayOnly: {
       type: Boolean,

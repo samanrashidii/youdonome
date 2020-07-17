@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top:100px;
+    margin-top:70px;
     @media (max-width: $tablet-screen) {
         margin-top:40px;
     }
@@ -15,18 +15,35 @@
     position: relative;
     width: 31%;
     max-width: $profile-box-width;
-    height: $profile-box-height;
     overflow: hidden;
     cursor: pointer;
     margin:1.2rem 0;
-    box-shadow: 0 0 15px $color-grey;
+    box-shadow: 0 0 15px $color-grey-400;
     border-radius: $border-radius-default;
     transition: $transition-sm;
+    > img{
+        transition: $transition-sm;
+    }
     &.display-only{
         cursor: default;
     }
     &:not(.display-only):hover{
         box-shadow: 0 0 15px $color-grey-900;
+        > img{
+            transform: scale(1.1, 1.1);
+        }
+    }
+    .activies{
+        position: absolute;
+        top:10px;
+        left:10px;
+        width: 100%;
+        z-index: 10;
+        img{
+            display: inline-block;
+            width: $social-image-size;
+            margin:0 10px 0 0;
+        }
     }
     h2{
         position: absolute;

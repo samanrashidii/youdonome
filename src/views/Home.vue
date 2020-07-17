@@ -22,6 +22,7 @@
           :key="index"
           :image="profile.image"
           :name="profile.name"
+          :activity="profile.fieldOfActivity"
           @click.native="profileClicked(profile)"
         />
       </div>
