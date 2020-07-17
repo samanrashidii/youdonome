@@ -1,24 +1,30 @@
 <template>
   <div class="start-quiz step-1">
-    <ProfileBox
-      :displayOnly="true"
-      :image="profile.image"
-      :name="profile.name"
-    />
-    <form
-      class="mt-3"
-      @submit.prevent="usernameInserted()"
-    >
-      <input
-        v-model="username"
-        type="text"
-        name="username"
-        :placeholder="$t('quiz.usernamePlaceholder')"
+    <div class="frame">
+      <ProfileBox
+        :displayOnly="true"
+        :image="profile.image"
+        :name="profile.name"
       />
-      <button type="submit">
-        {{ $t('quiz.startQuizButton') }}
-      </button>
-    </form>
+      <p
+        v-html="$t('quiz.description')"
+        class="description text-center no-justify"
+      />
+      <form
+        class="mt-2"
+        @submit.prevent="usernameInserted()"
+      >
+        <input
+          v-model="username"
+          type="text"
+          name="username"
+          :placeholder="$t('quiz.usernamePlaceholder')"
+        />
+        <button type="submit">
+          {{ $t('quiz.startQuizButton') }}
+        </button>
+      </form>
+    </div>
   </div>
 </template>
 

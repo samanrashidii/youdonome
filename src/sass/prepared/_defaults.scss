@@ -44,7 +44,9 @@ p{
         color: $color-secondary;
 	}
 	@media (max-width: $mobile-screen) {
-		text-align: justify !important;
+		&:not(.no-justify){
+			text-align: justify !important;
+		}
 	}
 }
 

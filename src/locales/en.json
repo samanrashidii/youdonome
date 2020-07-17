@@ -11,6 +11,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   "quiz": {
+    "description": "Write your name and start the quiz...",
     "usernamePlaceholder": "Enter your name please",
     "startQuizButton": "Start Quiz!",
     "confirmAnswer": "Confirm Answer",
@@ -21,72 +22,16 @@
   },
   "questions": [
     {
-      "id": 0,
-      "category": "comic",
-      "title": "Which one do you love the most?",
-      "answers": [
-        {
-          "id": 0,
-          "name": "Batman",
-          "image": "batman.jpg"
-        },
-        {
-          "id": 1,
-          "name": "Aquaman",
-          "image": "aquaman.jpg"
-        }
-      ]
+      "title": "Which one {name} loves the most?"
     },
     {
-      "id": 1,
-      "category": "food",
-      "title": "Which one you prefer to eat for the rest of your life?",
-      "answers": [
-        {
-          "id": 0,
-          "name": "Pizza",
-          "image": "pizza.jpg"
-        },
-        {
-          "id": 1,
-          "name": "Dizi",
-          "image": "dizi.jpg"
-        }
-      ]
+      "title": "Which one {name} prefers to eat for the rest of life?"
     },
     {
-      "id": 2,
-      "category": "movie",
-      "title": "Which one do you love the most?",
-      "answers": [
-        {
-          "id": 0,
-          "name": "Interstellar",
-          "image": "interstellar.jpg"
-        },
-        {
-          "id": 1,
-          "name": "Godfather",
-          "image": "godfather.jpg"
-        }
-      ]
+      "title": "Which one {name} loves the most?"
     },
     {
-      "id": 3,
-      "category": "music",
-      "title": "Which one do you love the most?",
-      "answers": [
-        {
-          "id": 0,
-          "name": "Metallica",
-          "image": "metallica.jpg"
-        },
-        {
-          "id": 1,
-          "name": "Pink Floyd",
-          "image": "pinkfloyd.jpg"
-        }
-      ]
+      "title": "Which one {name} loves the most?"
     }
   ]
 }

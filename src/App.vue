@@ -9,10 +9,12 @@ import { mapActions } from 'vuex'
 export default {
   created () {
     this.getProfiles()
+    this.getQuestions()
   },
   methods: {
     ...mapActions({
-      getProfiles: 'profiles/getProfiles'
+      getProfiles: 'profiles/getProfiles',
+      getQuestions: 'quiz/getQuestions'
     })
   }
 }

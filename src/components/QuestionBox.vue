@@ -1,6 +1,6 @@
 <template>
   <div class="question-box">
-    <h4>{{ question.title }}</h4>
+    <h4>{{ $t(`${question.title}.title`, {name: profile.name}) }}</h4>
     <ul class="answer-box">
         <li
             v-for="(answer, index) in question.answers"
@@ -23,6 +23,10 @@ export default {
   name: 'QuestionBox',
   props: {
     question: {
+      type: Object,
+      default: () => {}
+    },
+    profile: {
       type: Object,
       default: () => {}
     }

@@ -1,0 +1,70 @@
+[
+    {
+      "id": 0,
+      "category": "comic",
+      "title": "questions[0]",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Batman",
+          "image": "batman.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Aquaman",
+          "image": "aquaman.jpg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "category": "food",
+      "title": "questions[1]",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Pizza",
+          "image": "pizza.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Dizi",
+          "image": "dizi.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "movie",
+      "title": "questions[2]",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Interstellar",
+          "image": "interstellar.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Godfather",
+          "image": "godfather.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "music",
+      "title": "questions[3]",
+      "answers": [
+        {
+          "id": 0,
+          "name": "Metallica",
+          "image": "metallica.jpg"
+        },
+        {
+          "id": 1,
+          "name": "Pink Floyd",
+          "image": "pinkfloyd.jpg"
+        }
+      ]
+    }
+]

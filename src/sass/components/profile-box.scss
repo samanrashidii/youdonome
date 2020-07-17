@@ -3,8 +3,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top:70px;
+    .profile-box{
+        width: 31%;
+    }
+    @media (max-width: $laptop-screen) {
+        .profile-box{
+            width: 46.5%;
+        }
+    }
     @media (max-width: $tablet-screen) {
         margin-top:40px;
+        .profile-box{
+            width: 100%;
+        }
     }
     @media (max-width: $mobile-screen) {
         margin-top:20px;
@@ -13,7 +24,7 @@
 
 .profile-box{
     position: relative;
-    width: 31%;
+    width: 100%;
     max-width: $profile-box-width;
     overflow: hidden;
     cursor: pointer;
@@ -56,11 +67,7 @@
         background-color: $color-primary-transparent;
         z-index: 10;
     }
-    @media (max-width: $laptop-screen) {
-        width: 46.5%;
-    }
     @media (max-width: $tablet-screen) {
-        width: 100%;
         margin:1.2rem auto;
     }
     @media (max-width: $mobile-screen) {

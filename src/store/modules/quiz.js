@@ -1,3 +1,5 @@
+import SERVER from '@/service/server'
+
 export default {
   namespaced: true,
   state: {
@@ -6,7 +8,8 @@ export default {
     username: null,
     questionStep: 1,
     totalQuestion: 4,
-    correctAnswers: 0
+    correctAnswers: 0,
+    questions: []
   },
   getters: {
     quizData: state => state
@@ -30,6 +33,9 @@ export default {
     },
     UPDATE_CORRECT_ANSWER: (state) => {
       state.correctAnswers++
+    },
+    SET_QUESTIONS: (state, val) => {
+      state.questions = val
     }
   },
   actions: {
@@ -47,6 +53,10 @@ export default {
     },
     updateCorrectAnswer: (context) => {
       context.commit('UPDATE_CORRECT_ANSWER')
-    }
+    },
+    getQuestions: (context) => SERVER.getQuestions().then((res) => {
+      context.commit('SET_QUESTIONS', res.data)
+      return res.data
+    })
   }
 }
