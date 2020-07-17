@@ -30,12 +30,21 @@ body{
 h1,h2,h3,h4,h5,h6,strong{font-weight: normal;}
 i{font-style: normal;}
 
+h1{
+	@media (max-width: $mobile-screen) {
+		font-size: 1.7em;
+	}
+}
+
 p{
     line-height: 1.6;
     font-size: 0.8rem;
     padding-top:15px;
     strong{
         color: $color-secondary;
+	}
+	@media (max-width: $mobile-screen) {
+		text-align: justify !important;
 	}
 }
 

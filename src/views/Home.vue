@@ -9,6 +9,10 @@
         size="xlg"
         class="mt-2"
       />
+      <p
+        v-html="$t('howToPlay.description')"
+        class="description mt-2 text-center"
+      />
       <div
         v-if="profiles.length > 0"
         class="profile-box-wrapper"
@@ -19,17 +23,6 @@
           :image="profile.image"
           :name="profile.name"
           @click.native="profileClicked(profile)"
-        />
-      </div>
-      <Title
-        :value="$t('howToPlay.title')"
-        size="lg"
-        class="mt-2 pt-2"
-      />
-      <div class="frame frame-sm">
-        <p
-          v-html="$t('howToPlay.description')"
-          class="description mt-2 text-center"
         />
       </div>
     </div>
