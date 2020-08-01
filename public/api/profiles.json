@@ -5,7 +5,25 @@
         "slug": "aria-keoxer",
         "image": "ariakeoxer.jpg",
         "title": "youtuber",
-        "fieldOfActivity": ["twitch", "youtube"]
+        "fieldOfActivity": ["twitch", "youtube"],
+        "answers": [
+            {
+                "id": 0,
+                "correct": 0
+            },
+            {
+                "id": 1,
+                "correct": 0
+            },
+            {
+                "id": 2,
+                "correct": 0
+            },
+            {
+                "id": 3,
+                "correct": 1
+            }
+        ]
     },
     {
         "id": 1,
@@ -65,6 +83,24 @@
         "slug": "farshad-silent",
         "image": "farshadsilent.jpg",
         "title": "streamer/youtuber",
-        "fieldOfActivity": ["twitch", "youtube"]
+        "fieldOfActivity": ["twitch", "youtube"],
+        "answers": [
+            {
+                "id": 0,
+                "correct": 1
+            },
+            {
+                "id": 1,
+                "correct": 1
+            },
+            {
+                "id": 2,
+                "correct": 1
+            },
+            {
+                "id": 3,
+                "correct": 1
+            }
+        ]
     }
 ]
